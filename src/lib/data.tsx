@@ -10,27 +10,12 @@ import LogoCypress from "/public/images/logos/icon-cypress.svg";
 import LogoCypressLight from "/public/images/logos/icon-cypress-light.svg";
 import LogoGit from "/public/images/logos/icon-git.svg";
 
-import LogoUpwork from "/public/images/logos/logo-upwork.svg";
-import LogoGreenApex from "/public/images/logos/logo-greenapex.svg";
-import LogoGreenApexLight from "/public/images/logos/logo-greenapex-light.svg";
-import LogoDotnpixel from "/public/images/logos/logo-dotnpixel.svg";
-import LogoDotnpixelLight from "/public/images/logos/logo-dotnpixel-light.svg";
-
 import ProjectEcomstore from "/public/images/project-ecomstore.png";
 import ProjectHolidaze from "/public/images/project-holidaze.png";
 import ProjectAuction from "/public/images/project-auction.png";
 import ProjectWordle from "/public/images/project-wordle.png";
 
-import AvatarKrisztian from "/public/images/avatar-krisztian.png";
-import AvatarEugen from "/public/images/avatar-eugen.png";
-import AvatarDummy from "/public/images/avatar-dummy.svg";
-
-import {
-  ExperienceDetails,
-  ProjectDetails,
-  TechDetails,
-  TestimonialDetails,
-} from "@/lib/types";
+import { ExperienceDetails, ProjectDetails, TechDetails } from "@/lib/types";
 
 export const EXTERNAL_LINKS = {
   GITHUB: "https://github.com/Tuprosov",
@@ -49,10 +34,6 @@ export const NAV_LINKS = [
   {
     label: "Work",
     href: "#work",
-  },
-  {
-    label: "Testimonials",
-    href: "#testimonials",
   },
   {
     label: "Contact",
@@ -159,27 +140,3 @@ export const PROJECTS: ProjectDetails[] = [
     technologies: ["Tailwindcss"],
   },
 ];
-
-// export const TESTIMONIALS: TestimonialDetails[] = [
-//   {
-//     personName: "Krisztian Gyuris",
-//     personAvatar: AvatarKrisztian,
-//     title: "Founder - inboxgenie.io",
-//     testimonial:
-//       "Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.",
-//   },
-//   {
-//     personName: "Eugen Esanu",
-//     personAvatar: AvatarEugen,
-//     title: "Founder - shosho.design",
-//     testimonial:
-//       "Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.",
-//   },
-//   {
-//     personName: "Joe Matkin",
-//     personAvatar: AvatarDummy,
-//     title: "Freelancer",
-//     testimonial:
-//       "Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.",
-//   },
-// ];
