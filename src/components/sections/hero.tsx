@@ -32,11 +32,11 @@ const HeroSection = () => {
             </Typography>
             <Typography>
               A dedicated front-end developer with a passion for creating
-              stunning and responsive web applications. I've been honing my
+              stunning and responsive web applications. I&apos;ve been honing my
               skills in ReactJS, and JavaScript for the past year at Noroff
-              School of Technology and Digital Media. Currently, I'm diving into
-              the world of Typescript to build even more dynamic user
-              interfaces. When I'm not coding, I enjoy exploring new
+              School of Technology and Digital Media. Currently, I&apos;m diving
+              into the world of Typescript to build even more dynamic user
+              interfaces. When I&apos;m not coding, I enjoy exploring new
               technologies, reading tech blogs, and collaborating with other
               developers on exciting projects. I&apos;m always eager to take on
               new challenges and contribute to projects that push the boundaries

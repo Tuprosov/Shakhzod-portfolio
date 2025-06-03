@@ -57,7 +57,7 @@ const AboutMeSection = () => {
           </Typography>
           <Typography>
             I&apos;m interested in investing and keen on managing finances
-            effectively, so in my spare time I'd like to stay updated in
+            effectively, so in my spare time I&apos;d like to stay updated in
             investment oppportunities and financing. Also, I enjoy gaming from
             time to time.
           </Typography>
