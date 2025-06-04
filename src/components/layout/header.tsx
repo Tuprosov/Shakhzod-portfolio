@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 import {
   Drawer,
@@ -29,6 +30,7 @@ const Header = () => {
   const scrolled = useScroll(40);
   const [isOpen, setIsOpen] = useState(false);
   const size = useWindowSize();
+  const pathname = usePathname();
 
   // close sidebar if open in screen size < 768px
   useEffect(() => {
@@ -45,14 +47,21 @@ const Header = () => {
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center p-4 md:px-8">
-        <div className="hidden w-full items-center justify-between gap-6 md:flex">
-          <ul className="flex list-none items-center gap-6">
-            {NAV_LINKS.map((link, index) => (
-              <li key={index}>
-                <Link href={link.href}>{link.label}</Link>
-              </li>
-            ))}
-          </ul>
+        <div
+          className={mergeClasses(
+            "hidden w-full items-center gap-6 md:flex",
+            pathname === "/" ? "justify-between" : "justify-end"
+          )}
+        >
+          {pathname === "/" && (
+            <ul className="flex list-none items-center gap-6">
+              {NAV_LINKS.map((link, index) => (
+                <li key={index}>
+                  <Link href={link.href}>{link.label}</Link>
+                </li>
+              ))}
+            </ul>
+          )}
           <div className="flex items-center gap-4">
             <ThemeSwitcher />
             <DownloadCV />
