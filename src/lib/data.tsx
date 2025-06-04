@@ -99,6 +99,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
 
 export const PROJECTS: ProjectDetails[] = [
   {
+    slug: "holidaze",
     name: "Holidaze",
     description:
       "A platform for booking and hosting rental places. Noroff preject-exam",
@@ -108,6 +109,7 @@ export const PROJECTS: ProjectDetails[] = [
     technologies: ["React", "TailwindCSS", "Vite", "Zustand"],
   },
   {
+    slug: "ecomstore",
     name: "EcomStore",
     description: "An ecom store assignment for shopping online",
     url: "https://estorereact.netlify.app/",
@@ -116,6 +118,7 @@ export const PROJECTS: ProjectDetails[] = [
     technologies: ["React", "TailwindCSS", "Vite", "Redux Toolkit"],
   },
   {
+    slug: "wordle",
     name: "Wordle",
     description: "Wordle (by NewYorkTimes) recreated",
     url: "https://wordlebyshahzod.netlify.app/",
@@ -124,6 +127,7 @@ export const PROJECTS: ProjectDetails[] = [
     technologies: ["React", "TailwindCSS", "Vite"],
   },
   {
+    slug: "auctionsite",
     name: "AuctionSite",
     description:
       "An auction platform semester-project for placing a bid on various items",
