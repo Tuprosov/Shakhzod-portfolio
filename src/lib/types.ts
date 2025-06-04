@@ -19,6 +19,7 @@ export type ExperienceDetails = {
 };
 
 export type ProjectDetails = {
+  slug: string;
   name: string;
   description: string;
   url: string;
