@@ -8,11 +8,7 @@ import Footer from "@/components/layout/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const title =
-  "Shakhzodbek Gayratov | Frontend Developer from Kristiansand, Norway.";
-
 export const metadata: Metadata = {
-  title,
   keywords: ["Frontend Developer", "React Developer"],
   creator: "Shakhzodbek Gayratov",
   themeColor: [
