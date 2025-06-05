@@ -2,7 +2,7 @@
   Shakhzod Gayratov
 </h1>
 <p align="center">
-  My <a href="https://shakhzod-gayratov.netlify.app/" target="_blank">portfolio website </a>abuilt with <a href="https://nextjs.org" target="_blank">Next.js</a>, <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>, <a href="https://www.radix-ui.com" target="_blank">Radix UI</a> and deployed on <a href="https://www.netlify.com/" target="_blank">Netlify</a>.⚡
+  My <a href="https://shakhzod-gayratov.netlify.app/" target="_blank">portfolio website</a> built with <a href="https://nextjs.org" target="_blank">Next.js</a>, <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>, <a href="https://www.radix-ui.com" target="_blank">Radix UI</a> and deployed on <a href="https://www.netlify.com/" target="_blank">Netlify</a>.⚡
 </p>
 
 
