@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PROJECTS } from "@/lib/data";
+import Tag from "@/components/data-display/tag";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { getProjectTitle } from "@/lib/seo";
@@ -43,14 +44,9 @@ export default function ProjectPage({ params }: Params) {
         className="rounded-lg"
       />
       <p className="mt-6">{project.description}</p>
-      <div className="mt-4 flex flex-wrap gap-2">
-        {project.technologies.map((tech) => (
-          <span
-            key={tech}
-            className="rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-800"
-          >
-            {tech}
-          </span>
+      <div className="flex flex-wrap gap-2">
+        {project.technologies?.map((technology, index) => (
+          <Tag key={index} label={technology} />
         ))}
       </div>
       <Link
