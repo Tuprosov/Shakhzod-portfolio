@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PROJECTS } from "@/lib/data";
 import Tag from "@/components/data-display/tag";
+import Typography from "@/components/general/typography";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { getProjectTitle } from "@/lib/seo";
@@ -34,16 +35,16 @@ export default function ProjectPage({ params }: Params) {
   }
 
   return (
-    <div className="mx-auto max-w-4xl p-8">
-      <h1 className="mb-4 text-4xl font-bold">{project.name}</h1>
+    <div className="mx-auto flex max-w-4xl flex-col gap-4 p-8">
+      <Typography variant="h1">{project.name}</Typography>
       <Image
         src={project.previewImage}
         alt={`${project.name} preview`}
         width={800}
         height={450}
-        className="rounded-lg"
+        className="rounded-lg shadow-2xl"
       />
-      <p className="mt-6">{project.description}</p>
+      <Typography>{project.description}</Typography>
       <div className="flex flex-wrap gap-2">
         {project.technologies?.map((technology, index) => (
           <Tag key={index} label={technology} />
@@ -57,7 +58,6 @@ export default function ProjectPage({ params }: Params) {
       >
         Visit Live Project
       </Link>
-      <br />
       <Link
         href={project.gitUrl}
         target="_blank"
