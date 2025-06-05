@@ -18,7 +18,7 @@
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/shahsagarm/sagarshah.dev.git
+$ https://github.com/Tuprosov/Shakhzodbek-Gayratov.git
 $ cd sagarshah.dev
 $ npm install
 $ npm run dev
