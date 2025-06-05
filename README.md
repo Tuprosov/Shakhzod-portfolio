@@ -19,7 +19,7 @@
 
 ```bash
 $ https://github.com/Tuprosov/Shakhzodbek-Gayratov.git
-$ cd sagarshah.dev
+$ cd Shakhzodbek-Gayratov
 $ npm install
 $ npm run dev
 ```
