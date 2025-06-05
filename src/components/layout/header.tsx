@@ -19,6 +19,7 @@ import ThemeSwitcher from "@/components/general/theme-switcher";
 import IconButton from "@/components/general/icon-button";
 import DownloadCV from "@/components/general/download-cv";
 import Typography from "@/components/general/typography";
+import path from "path";
 
 const Logo = () => (
   <Typography variant="h3" className="font-bold">
@@ -46,14 +47,14 @@ const Header = () => {
         scrolled ? "bg-gray/50 backdrop-blur-xl md:border-gray-100" : ""
       )}
     >
-      <div className="mx-auto flex w-full max-w-7xl items-center p-4 md:px-8">
-        <div
-          className={mergeClasses(
-            "hidden w-full items-center gap-6 md:flex",
-            pathname === "/" ? "justify-between" : "justify-end"
-          )}
-        >
-          {pathname === "/" && (
+      <div
+        className={mergeClasses(
+          "mx-auto flex w-full max-w-7xl items-center p-4 md:px-8",
+          pathname !== "/" && "justify-end"
+        )}
+      >
+        {pathname === "/" && (
+          <div className="hidden w-full items-center justify-between gap-6 md:flex">
             <ul className="flex list-none items-center gap-6">
               {NAV_LINKS.map((link, index) => (
                 <li key={index}>
@@ -61,56 +62,65 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-          )}
+            <div className="flex items-center gap-4">
+              <ThemeSwitcher />
+              <DownloadCV />
+            </div>
+          </div>
+        )}
+
+        {pathname !== "/" && (
           <div className="flex items-center gap-4">
             <ThemeSwitcher />
             <DownloadCV />
           </div>
-        </div>
+        )}
 
-        <Drawer open={isOpen} onOpenChange={setIsOpen}>
-          <DrawerTrigger asChild className="flex md:hidden">
-            <IconButton>
-              <Menu />
-            </IconButton>
-          </DrawerTrigger>
-          <DrawerContent>
-            <div className="flex items-center justify-between border-b border-gray-100 p-4">
-              <Logo />
-              <DrawerClose asChild>
-                <IconButton>
-                  <X />
-                </IconButton>
-              </DrawerClose>
-            </div>
-            <div className="border-b border-gray-100 p-4">
-              <ul className="flex list-none flex-col gap-4">
-                {NAV_LINKS.map((link, index) => (
-                  <li key={index}>
-                    <Link
-                      href={link.href}
-                      onClick={() => {
-                        const timeoutId = setTimeout(() => {
-                          setIsOpen(false);
-                          clearTimeout(timeoutId);
-                        }, 500);
-                      }}
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="flex flex-col gap-4 p-4">
-              <div className="flex items-center justify-between">
-                <Typography>Switch Theme</Typography>
-                <ThemeSwitcher />
+        {pathname === "/" && (
+          <Drawer open={isOpen} onOpenChange={setIsOpen}>
+            <DrawerTrigger asChild className="flex md:hidden">
+              <IconButton>
+                <Menu />
+              </IconButton>
+            </DrawerTrigger>
+            <DrawerContent>
+              <div className="flex items-center justify-between border-b border-gray-100 p-4">
+                <Logo />
+                <DrawerClose asChild>
+                  <IconButton>
+                    <X />
+                  </IconButton>
+                </DrawerClose>
               </div>
-              <DownloadCV />
-            </div>
-          </DrawerContent>
-        </Drawer>
+              <div className="border-b border-gray-100 p-4">
+                <ul className="flex list-none flex-col gap-4">
+                  {NAV_LINKS.map((link, index) => (
+                    <li key={index}>
+                      <Link
+                        href={link.href}
+                        onClick={() => {
+                          const timeoutId = setTimeout(() => {
+                            setIsOpen(false);
+                            clearTimeout(timeoutId);
+                          }, 500);
+                        }}
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="flex flex-col gap-4 p-4">
+                <div className="flex items-center justify-between">
+                  <Typography>Switch Theme</Typography>
+                  <ThemeSwitcher />
+                </div>
+                <DownloadCV />
+              </div>
+            </DrawerContent>
+          </Drawer>
+        )}
       </div>
     </header>
   );
