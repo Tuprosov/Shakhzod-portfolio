@@ -19,7 +19,7 @@
 
 ```bash
 $ https://github.com/Tuprosov/Shakhzod-portfolio.git
-$ cd Shakhzodbek-Gayratov
+$ cd Shakhzod-portfolio
 $ npm install
 $ npm run dev
 ```
