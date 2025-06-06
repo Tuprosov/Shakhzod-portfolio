@@ -18,7 +18,7 @@
 ## Running Locally
 
 ```bash
-$ https://github.com/Tuprosov/Shakhzodbek-Gayratov.git
+$ https://github.com/Tuprosov/Shakhzod-portfolio.git
 $ cd Shakhzodbek-Gayratov
 $ npm install
 $ npm run dev
