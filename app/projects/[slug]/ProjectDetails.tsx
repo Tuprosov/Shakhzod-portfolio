@@ -32,6 +32,7 @@ export default function ProjectDetails({
   return (
     <div className="relative mx-auto max-w-4xl p-8">
       <IconButton
+        style={{ position: "absolute", right: "30px", top: "50px" }}
         size={width && width < 768 ? "md" : "lg"}
         onClick={() => handleCopyClick(project.url)}
         showTooltip={isCopied}
