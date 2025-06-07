@@ -2,7 +2,7 @@
   Shakhzod Gayratov
 </h1>
 <p align="center">
-  My portfolio website built with <a href="https://nextjs.org" target="_blank">Next.js</a>, <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>, <a href="https://www.radix-ui.com" target="_blank">Radix UI</a> and deployed on <a href="https://www.netlify.com/" target="_blank">Netlify</a>.⚡
+  My <a href="https://shakhzod-gayratov.netlify.app/" target="_blank">portfolio website</a> built with <a href="https://nextjs.org" target="_blank">Next.js</a>, <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>, <a href="https://www.radix-ui.com" target="_blank">Radix UI</a> and deployed on <a href="https://www.netlify.com/" target="_blank">Netlify</a>.⚡
 </p>
 
 
@@ -18,8 +18,8 @@
 ## Running Locally
 
 ```bash
-$ https://github.com/Tuprosov/Shakhzodbek-Gayratov.git
-$ cd Shakhzodbek-Gayratov
+$ https://github.com/Tuprosov/Shakhzod-portfolio.git
+$ cd Shakhzod-portfolio
 $ npm install
 $ npm run dev
 ```
