@@ -118,7 +118,8 @@ export const PROJECTS: ProjectDetails[] = [
       "Start using Vite for tooling and React to create dynamic components, rtk for global states",
     description:
       "An ecom store assignment for shopping online. First React project",
-    imporovement: "",
+    imporovement:
+      "JSDdoc documentation added for utility functions; Applied retry logic for initial load; Removed unused variables/imports and console.logs; Corrected indentations; Corrected keys for components to IDs. Also, made header and hero section responsive.",
     url: "https://estorereact.netlify.app/",
     gitUrl: "https://github.com/Tuprosov/React-eCom-CA",
     previewImage: ProjectEcomstore,
