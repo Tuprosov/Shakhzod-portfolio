@@ -101,8 +101,11 @@ export const PROJECTS: ProjectDetails[] = [
   {
     slug: "holidaze",
     name: "Holidaze",
+    objective:
+      "To learn more about global states, specifically about Zustand to create stores.",
     description:
-      "A platform for booking and hosting rental places. Noroff preject-exam",
+      "A platform for booking and hosting rental places. Noroff project-exam",
+    imporovement: "",
     url: "https://holidazeeeeeeee.netlify.app/",
     gitUrl: "https://github.com/Tuprosov/PE2-Holidaze",
     previewImage: ProjectHolidaze,
@@ -111,7 +114,11 @@ export const PROJECTS: ProjectDetails[] = [
   {
     slug: "ecomstore",
     name: "EcomStore",
-    description: "An ecom store assignment for shopping online",
+    objective:
+      "Start using Vite for tooling and React to create dynamic components, rtk for global states",
+    description:
+      "An ecom store assignment for shopping online. First React project",
+    imporovement: "",
     url: "https://estorereact.netlify.app/",
     gitUrl: "https://github.com/Tuprosov/React-eCom-CA",
     previewImage: ProjectEcomstore,
@@ -120,7 +127,10 @@ export const PROJECTS: ProjectDetails[] = [
   {
     slug: "wordle",
     name: "Wordle",
+    objective:
+      "To learn more about React state management, use 'useEffect, useState etc.'",
     description: "Wordle (by NewYorkTimes) recreated",
+    imporovement: "",
     url: "https://wordlebyshahzod.netlify.app/",
     gitUrl: "https://github.com/Tuprosov/Wordle",
     previewImage: ProjectWordle,
@@ -129,8 +139,11 @@ export const PROJECTS: ProjectDetails[] = [
   {
     slug: "auctionsite",
     name: "AuctionSite",
+    objective: "To apply/learn TailwindCSS and use JS best practices",
     description:
       "An auction platform semester-project for placing a bid on various items",
+    imporovement:
+      " More robust error handling. Displayed actual error messages and improved UX. Applied retry logic for inital load. Removed console.errors as provided in the feedback",
     url: "https://tuprosov.github.io/Semester-Project-2/index.html",
     gitUrl: "https://github.com/Tuprosov/Semester-Project-2",
     previewImage: ProjectAuction,

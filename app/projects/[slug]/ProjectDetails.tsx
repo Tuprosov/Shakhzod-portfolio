@@ -50,11 +50,12 @@ export default function ProjectDetails({
           className="rounded-lg shadow-2xl"
         />
         <Typography>{project.description}</Typography>
-        <Typography>
-          Updated: More robust error handling. Displayed actual error messages
-          and improved UX. Applied retry logic for inital load. Removed
-          console.errors as provided in the feedback{" "}
-        </Typography>
+        {project.objective && (
+          <Typography>Objective: {project.objective}</Typography>
+        )}
+        {project.imporovement && (
+          <Typography>Updated: {project.imporovement}</Typography>
+        )}
         <div className="flex flex-wrap gap-2">
           {project.technologies?.map((tech: string, i: number) => (
             <Tag key={i} label={tech} />

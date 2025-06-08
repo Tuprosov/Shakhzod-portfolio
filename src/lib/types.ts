@@ -21,7 +21,9 @@ export type ExperienceDetails = {
 export type ProjectDetails = {
   slug: string;
   name: string;
+  objective: string;
   description: string;
+  imporovement: string;
   url: string;
   gitUrl: string;
   previewImage: string | StaticImageData;
