@@ -32,7 +32,7 @@ export default function ProjectDetails({
   return (
     <div className="relative mx-auto max-w-4xl p-8">
       <IconButton
-        style={{ position: "absolute", right: "30px", top: "50px" }}
+        style={{ position: "absolute", right: "50px", top: "50px" }}
         size={width && width < 768 ? "md" : "lg"}
         onClick={() => handleCopyClick(project.url)}
         showTooltip={isCopied}
@@ -50,6 +50,11 @@ export default function ProjectDetails({
           className="rounded-lg shadow-2xl"
         />
         <Typography>{project.description}</Typography>
+        <Typography>
+          Updated: More robust error handling. Displayed actual error messages
+          and improved UX. Applied retry logic for inital load. Removed
+          console.errors as provided in the feedback{" "}
+        </Typography>
         <div className="flex flex-wrap gap-2">
           {project.technologies?.map((tech: string, i: number) => (
             <Tag key={i} label={tech} />
